@@ -425,7 +425,11 @@ export default function VideoMeetComponent() {
         } catch (error) {
             
         }
-        routeTo("/home");
+        if(localStorage.getItem('token') === null){
+            routeTo("/");
+        }else{
+            routeTo("/home");
+        }
     }
 
     return (

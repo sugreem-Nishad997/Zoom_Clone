@@ -146,7 +146,6 @@ export default function authentication() {
               >
                 {formState === 0 ? "LogIn" : "Register"}
               </Button>
-              
             </Box>
           </Box>
         </Grid>
